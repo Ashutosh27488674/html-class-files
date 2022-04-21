@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in HTML</title>
+    <style>
+        body{
+            width: 100%;
+            height: 1500px;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            margin: 4px;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* flex-flow: row; */
+            /* flex-direction: row; */
+            
+            
+        }
+        .item{
+            box-shadow: 5px 5px rgb(109, 205, 14);
+            /* text-shadow: 25px 25px ; */
+            background-color: aquamarine;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            margin: 2px;
+            text-align: center;
+            padding: 5px;
+            
+            
+        }
+        #item2
+        {
+            /* position: fixed; */
+            box-shadow: 5px 5px rebeccapurple;
+        }
+        #item2::after{
+            content: 'Ashutosh';
+            position:relative;
+            padding: 5px;
+         /* flex-grow: 1; */
+         /* flex-shrink: 2; */
+         /* flex-basis: 200px; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Position in HTML...</h1>
+    <div class="container">
+    <div class="item">This is item1.</div>
+    <div class="item" id="item2">This is item2.</div>
+    <div class="item">This is item3.</div>
+    <div class="item">This is item4.</div>
+    <div class="item">This is item5.</div>
+    </div>
+
+    
+</body>
+</html>
